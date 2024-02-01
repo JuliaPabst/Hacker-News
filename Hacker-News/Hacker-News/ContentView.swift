@@ -14,6 +14,7 @@ struct ContentView: View {
                 Text("Hello, world!")
                 Text("Hello, world!")
             }
+            .navigationBarTitle("Hacker News")
         }
     }
 }
@@ -21,3 +22,10 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+struct Posts: Identifiable {
+    let id: String
+    let title: String
+}
+
+let posts = [Posts(id: "1", title: "hello"), Posts(id: "2", title: "hello"), Posts(id: "3", title: "hello")]
